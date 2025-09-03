@@ -1,0 +1,12 @@
+@if (countryInfo.name) {
+    <div>
+      <h2>{{ countryInfo.name }}</h2>
+      <p><strong>Capital:</strong> {{ countryInfo.capital }}</p>
+      <p><strong>Region:</strong> {{ countryInfo.region }}</p>
+      <p><strong>Income Level:</strong> {{ countryInfo.incomeLevel }}</p>
+      <p><strong>Latitude:</strong> {{ countryInfo.latitude }}</p>
+      <p><strong>Longitude:</strong> {{ countryInfo.longitude }}</p>
+    </div>
+  } @else {
+    <p>Click on a country to see details.</p>
+  }

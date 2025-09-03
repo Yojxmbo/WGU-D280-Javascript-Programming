@@ -1,0 +1,14 @@
+<div class="header-container">
+  <h1>World Map</h1>
+  <p class="subtitle">by Okoro Technologies, LLC.</p>
+</div>
+
+<div class="map-container">
+  <app-map [countryData]="countriesData()" (countrySelected)="onCountrySelected($event)"></app-map>
+</div>
+
+<div class="detail-container">
+  <app-country-detail [countryData]="countryDetail()"></app-country-detail>
+</div>
+
+<router-outlet></router-outlet>
